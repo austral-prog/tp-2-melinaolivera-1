@@ -1,7 +1,7 @@
 def earth():
-   country1 = "Bangladesh"
-   country2 = "Barbados"
-   result1 = country1 < country2
-   result2 = country2 < country1
-   print(f"The result of {country1} comes first in the dictionary than {country2} is {result1}.")
-   print(f"The result of {country2} comes first in the dictionary than {country1} is {result2}.")
+    Y = "barbados "
+    X = "Bangladesh"
+    comparacion = X > Y
+    otra_comparacion = Y > X
+    print(f' The result of X comes first in the diccionary than Y is {comparacion}')
+    print(f'The result of Y comes first in the diccionary than X is {otra_comparacion}')
