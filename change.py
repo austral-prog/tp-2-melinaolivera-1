@@ -1,7 +1,9 @@
 def change():
-   country1 = "Bangladesh"
-   country2 = "Barbados"
-   result1 = country1 < country2
-   result2 = country2 < country1
-   print(f"The result of {country1} comes first in the dictionary than {country2} is {result1}.")
-   print(f"The result of {country2} comes first in the dictionary than {country1} is {result2}.")     
+  gasto = float(input("Ingresar gasto:\n"))
+  dinero_recibido = float(input("Dinero recibido\n"))
+  vuelto_total = dinero_recibido - gasto
+  pesos = int(vuelto_total)
+  centavos = int(round((vuelto_total - pesos) * 100))
+  print("\nVuelto\n")
+  print(f"Pesos:\n{pesos}")
+  print(f"Centavos:\n{centavos}")
