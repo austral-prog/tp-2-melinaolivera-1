@@ -1,8 +1,7 @@
 def earth():
-    pais_x='Bangladesh'
-    pais_y='Barbados'
-    primera_relacion= pais_x > pais_y
-    segunda_relacion= pais_x < pais_y
-    print(f'The result of Bangladesh comes first in the diccionary than Barbados is {primera_relacion}')
-    print(f'The result pf Barbados comes first in the diccionary than Bangladesh is {segunda_relacion}')
-
+    country1 = "Bangladesh"
+    country2 = "Barbados"
+    first_country_comes_first = country1 < country2
+    second_country_comes_first = country2 < country1
+    print(f"The result of {country1} comes first in the dictionary than {country2} is {first_country_comes_first}.")
+    print(f"The result of {country2} comes first in the dictionary than {country1} is {second_country_comes_first}.")
