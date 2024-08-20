@@ -1,16 +1,17 @@
-def comparar_paises(pais_x, pais_y):
-    # Determina si pais_x viene antes que pais_y en el diccionario
-    resultado_x_primero = pais_x < pais_y
-    # Determina si pais_y viene antes que pais_x en el diccionario
-    resultado_y_primero = pais_y < pais_x
+def imprimir_informe_vuelto():
+    # Solicitar entrada del usuario
+    gasto = float(input("Ingresar gasto:\n"))
+    dinero_recibido = float(input("Dinero recibido\n"))
 
-    # Imprimir resultados con el formato requerido
-    print(f"The result of {pais_x} comes first in the dictionary than {pais_y} is {str(resultado_x_primero).capitalize()}.")
-    print(f"The result of {pais_y} comes first in the dictionary than {pais_x} is {str(resultado_y_primero).capitalize()}.")
+    # Calcular el vuelto
+    vuelto = dinero_recibido - gasto
+    pesos = int(vuelto)
+    centavos = int(round((vuelto - pesos) * 100))
 
-# Definir los nombres de los países
-pais_x = "Bangladesh"
-pais_y = "Barbados"
+    # Imprimir el informe
+    print("\nVuelto\n")
+    print(f"Pesos:\n{pesos}")
+    print(f"Centavos:\n{centavos}")
 
-# Llamar a la función para comparar los países
-comparar_paises(pais_x, pais_y)
+# Llamar a la función para ejecutar el programa
+imprimir_informe_vuelto()
