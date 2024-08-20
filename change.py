@@ -1,5 +1,3 @@
-def change():
-    
     print("Ingresar gasto:")
     gasto = float(input())
     
