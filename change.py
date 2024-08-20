@@ -1,10 +1,15 @@
-gasto = float(input("Ingresar gasto:\n"))
-dinero_recibido = float(input("Dinero recibido:\n"))
+import sys
 
-vuelto = dinero_recibido - gasto
-pesos = int(vuelto)
-centavos = int(round((vuelto - pesos) * 100))
+def main(gasto, dinero_recibido):
+    vuelto = dinero_recibido - gasto
+    pesos = int(vuelto)
+    centavos = int(round((vuelto - pesos) * 100))
 
-print("\nVuelto")
-print(f"Pesos: {pesos}")
-print(f"Centavos: {centavos}")
+    print("\nVuelto")
+    print(f"Pesos: {pesos}")
+    print(f"Centavos: {centavos}")
+
+if __name__ == "__main__":
+    gasto = float(sys.argv[1])
+    dinero_recibido = float(sys.argv[2])
+    main(gasto, dinero_recibido)
