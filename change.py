@@ -5,8 +5,8 @@ def comparar_paises(pais_x, pais_y):
     resultado_y_primero = pais_y < pais_x
 
     # Imprimir resultados con el formato requerido
-    print(f"The result of {pais_x} comes first in the dictionary than {pais_y} is {resultado_x_primero}.")
-    print(f"The result of {pais_y} comes first in the dictionary than {pais_x} is {resultado_y_primero}.")
+    print(f"The result of {pais_x} comes first in the dictionary than {pais_y} is {str(resultado_x_primero).capitalize()}.")
+    print(f"The result of {pais_y} comes first in the dictionary than {pais_x} is {str(resultado_y_primero).capitalize()}.")
 
 # Definir los nombres de los países
 pais_x = "Bangladesh"
