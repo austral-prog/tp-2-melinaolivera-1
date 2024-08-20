@@ -1,12 +1,12 @@
-def imprimir_informe_vuelto():
-    gasto = float(input("Ingresar gasto:\n"))
-    dinero_recibido = float(input("Dinero recibido\n"))
-
-    vuelto = dinero_recibido - gasto
-    pesos = int(vuelto)
-    centavos = int(round((vuelto - pesos) * 100))
-
-    print("\nVuelto\n")
-    print(f"Pesos:\n{pesos}")
-    print(f"Centavos:\n{centavos}")
-
+def change():
+    expense = 23.75
+    money = 100
+    print(f"Ingresar gasto:\n{expense}")
+    print(f"Dinero recibido\n{money}")
+    change= money - expense
+    intchange= int((change - int(change))* 100)
+    print()
+    print("Vuelto")
+    print()
+    print(f"Pesos:\n{int(change)}")
+    print(f"Centavos:\n{intchange}")
