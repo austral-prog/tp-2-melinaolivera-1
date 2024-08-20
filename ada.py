@@ -1,19 +1,11 @@
-def change():
-    
-    print("Ingresar gasto:")
-    gasto = float(input())
-    
-    print("Dinero recibido")
-    dinero_recibido = float(input())
+first_name = "AdA"
+last_name = "LoVeLAce"
 
-    vuelto = dinero_recibido - gasto
-    pesos = int(vuelto)
-    centavos = int(round((vuelto - pesos) * 100))
+lowercase_name = f"{first_name.lower()} {last_name.lower()}"
+capitalized_name = f"{first_name.title()} {last_name.title()}"
+uppercase_name = f"{first_name.upper()} {last_name.upper()}"
 
-    print("")  
-    print("Vuelto")
-    print("")  
-    print(f"Pesos:")
-    print(f"{pesos}")
-    print(f"Centavos:")
-    print(f"{centavos}")
+print(f"       {lowercase_name}")
+print(capitalized_name)
+print(uppercase_name)
+print(f"\t{lowercase_name}")
