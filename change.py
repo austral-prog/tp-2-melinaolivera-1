@@ -1,4 +1,3 @@
-def change():
     gasto = float(input("Ingresar gasto:\n"))
     dinero_recibido = float(input("Dinero recibido\n"))
 
