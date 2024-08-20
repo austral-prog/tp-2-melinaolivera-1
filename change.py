@@ -3,7 +3,7 @@
 
     vuelto = dinero_recibido - gasto
     pesos = int(vuelto)
-    centavos = round((vuelto - pesos) * 100)
+    centavos = int(round((vuelto - pesos) * 100))
 
     print("\nVuelto")
     print(f"Pesos:\n{pesos}")
