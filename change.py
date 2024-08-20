@@ -10,5 +10,3 @@ def imprimir_informe_vuelto():
     print(f"Pesos:\n{pesos}")
     print(f"Centavos:\n{centavos}")
 
-# Llamar a la función para ejecutar el programa
-imprimir_informe_vuelto()
